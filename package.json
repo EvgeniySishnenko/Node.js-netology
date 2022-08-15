@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "bin": {
-    "date-utils": "./date.js"
+    "date-utils": "./index.js"
   },
   "scripts": {},
   "author": "",
