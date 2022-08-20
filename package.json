@@ -2,10 +2,11 @@
   "name": "node.js-netology",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "main": "./src/index.js",
+  "bin": {
+    "game": "./src/index.js"
   },
+  "scripts": {},
   "author": "",
   "license": "ISC",
   "dependencies": {
