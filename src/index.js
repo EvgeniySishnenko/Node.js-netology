@@ -32,6 +32,7 @@ rLine.question("Отгадай орел или решка", (input) => {
       modelLogGame.gameFalse = gameFalse;
       modelLogGame.gameTrue = gameTrue;
       modelLogGame.games = 1;
+      modelLogGame.percent = (modelLogGame.gameTrue * 100) / modelLogGame.games;
       fs.writeFile(file, JSON.stringify(modelLogGame), (err) => {
         if (err) throw err;
       });
@@ -39,6 +40,8 @@ rLine.question("Отгадай орел или решка", (input) => {
       const logGame = JSON.parse(data);
       logGame.gameFalse += gameFalse;
       logGame.gameTrue += gameTrue;
+      logGame.games += 1;
+      logGame.percent = (logGame.gameTrue * 100) / logGame.games;
       fs.writeFile(file, JSON.stringify(logGame), (err) => {
         if (err) throw err;
       });

@@ -4,7 +4,8 @@
   "description": "",
   "main": "./src/index.js",
   "bin": {
-    "game": "./src/index.js"
+    "game": "./src/index.js",
+    "status": "./src/statusGame.js"
   },
   "scripts": {},
   "author": "",
